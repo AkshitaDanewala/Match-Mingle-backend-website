@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.aboutpg{
+    height: 90vh;
+    width: 100%;
+    background-color: rgb(255,245,238);
+   
+}
+
+.aboutpg-head{
+    height: 10vh;
+    width: 100%;
+    /* border: 2px solid black; */
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.aboutpg-head >h1{
+   font-family: Arial, Helvetica, sans-serif;
+   font-size:3vmax;
+}
+.aboutbox{
+    height: 75vh;
+    width: 100%;
+    /* border: 2px solid black; */
+    display: flex;
+    margin-top: 1vmax;
+}
+
+.aboutpg-left{
+    height: 100%;
+    width: 100%;
+    /* background-color: lightblue; */
+}
+.img1{
+    height: 45vh;
+    width: 20vw;
+    border: 3px solid black;
+    transform: translate(5vmax, 1vmax);
+    background-image: url("https://media.istockphoto.com/id/1628708059/photo/young-couple-enjoying-time-at-home.jpg?s=612x612&w=0&k=20&c=MYeJihcDF_rzDHcWx0Vpi87ZslA82Y1xmzMSzB2UaWE=");
+    background-position: center;
+    background-size: cover;
+}
+
+.img2{
+    height: 45vh;
+    width: 20vw;
+    border: 3px solid black;
+    transform: translate(22vmax, -8vmax);
+position: absolute;
+z-index: 999;
+background-image: url("https://media.istockphoto.com/id/1177002866/photo/close-up-portrait-of-his-he-her-she-nice-attractive-lovely-sweet-charming-gentle-cheerful.jpg?s=612x612&w=0&k=20&c=qZHNU6-lAcj_lD_fGNWzlH-lC7a8mOKmrhrwVb9VCfA=");
+background-position: center;
+background-size: cover;
+}
+
+
+
+.aboutpg-right{
+    height: 100%;
+    width: 100%;
+    padding: 5vmax 2vmax;
+}
+
+
+.aboutpg-right >.para1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.7vmax;
+}
+span{
+    font-size: 1.7vmax;
+color: hotpink;
+}
+
+.aboutpg-right >.para2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.7vmax;
+    margin-top: 3vmax;
+}
+
+.aboutpg2{
+    height: 100vh;
+    width: 100%;
+    /* background-color: yellow; */
+    
+
+}
+
+.aboutpg2-head{
+    height: 10vh;
+    width: 100%;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2vmax;
+}
+.aboutpg2-head >h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3vmax;
+   
+}
+
+.aboutpg2 >p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:1.8vmax;
+    text-align: center;
+    padding: 2vmax 5vmax;
+    color: rgb(98, 200, 241);
+    font-weight: bold;
+}
+.imgbox{
+    height: 60vh;
+width: 50vw;
+/* border: 2px solid black; */
+margin: auto;
+border-radius: 0.5vmax;
+background-image: url("https://media.istockphoto.com/id/1477786025/photo/diverse-group-of-smiling-businesspeople-standing-together-in-a-boardroom.jpg?s=612x612&w=0&k=20&c=e7WqnNgU9flFG0Izph0oFPKaVyMFrYFSAnBH5aYw76I=");
+background-position: center;
+background-size: cover;
+}
+
+.vision{
+    height: 40vh;
+    width: 100%;
+}
+.vision >h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5vmax;
+    text-align: center;
+    padding-top: 2vmax;
+}
+.vision >p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5vmax;
+    padding: 2vmax 5vmax;
+    text-align: center;
+}

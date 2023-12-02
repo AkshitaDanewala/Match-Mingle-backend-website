@@ -1,0 +1,419 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.pg1{
+    height: 90vh;
+    width: 100%;
+   background-color: rgb(255,245,238);
+  
+}
+
+.pg1-head{
+    height: 10vh;
+    width: 100%;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.man, .women{
+    height: 10vh;
+    width: 13vw;
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.man >h1, .women > h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vmax;
+}
+
+.man-img{
+    height: 8vh;
+    width: 4vw;
+    /* border: 2px solid black; */
+background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGGUFhmOWQAeRxS4cr4irKcxK60amMF3qT_g&usqp=CAU");
+background-position: center;
+background-size: cover;
+border-radius: 5vmax;
+}
+
+.women-img{
+    height: 8vh;
+    width: 4vw;
+    /* border: 2px solid black; */
+background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9vUIhTZNfCgvVPFdKBZ7vcJNUvFfsfu1qQ5GujITkzYsa2XTXskLo-4PEj6S2y9OwOIA&usqp=CAU */");
+background-position: center;
+background-size: cover;
+border-radius: 5vmax;
+}
+.pg1box{
+    height: 80vh;
+    width: 100%;
+    /* border: 2px solid black; */
+    display: flex;
+}
+.pg1box-left{
+    height: 100%;
+    width: 50%;
+    /* background-color: cyan; */
+    padding: 3vmax 2vmax;
+   
+}
+
+.pg1box-left >h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3.6vmax;
+}
+.pg1box-left >p{
+    font-size: 1.2vmax;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 1vmax;
+}
+.pg1box-left >button{
+    padding: 0.7vmax 1.2vmax;
+    margin-top: 1vmax;
+    font-size: 1.4vmax;
+    background-color: rgb(214,97,103);
+    border: none;
+  border-radius: 0.5vmax;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.pg1box-left >button a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.category{
+    height: 15vh;
+    width: 90%;
+    /* border: 2px solid black; */
+    margin-top: 3vmax;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+box-shadow: 0 0 4px black;
+}
+
+.box{
+    height: 10vh;
+    width: 9vw;
+    /* border: 2px solid black; */
+    padding: 0 0.7vmax;
+}
+.box >h4{
+    font-size: 1.3vmax;
+    font-family: Arial, Helvetica, sans-serif;
+}
+select{
+    margin-top: 0.6vmax;
+    padding: 0.3vmax 0.8vmax;
+    border-radius: 0.3vmax;
+    cursor: pointer;
+}
+.pg1box-right{
+    height: 100%;
+    width: 50%;
+    /* background-color: yellowgreen; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.pg1box-right-heading{
+    height: 15vh;
+    width: 100%;
+    /* border: 2px solid black; */
+text-align: center;
+}
+
+.pg1box-right-heading >h3{
+    font-size: 2.5vmax;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 2vmax;
+}
+
+.pg1box-right-img{
+    height: 60vh;
+    width: 35vw;
+    /* border: 2px solid black; */
+    margin-top: 1.3vmax;
+     background-image: url("https://as2.ftcdn.net/v2/jpg/02/47/82/21/1000_F_247822190_GlesbKnYbxKbvsVcFnBelXPiHbiPxTs3.jpg");
+     background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+}
+
+/* --------------------------------pg1 end------------------------------------- */
+
+
+.pg2{
+    height: 40vh;
+    width: 100%;
+background-color: pink;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+padding: 0 1vmax;
+}
+.pg2-box1, .pg2-box2, .pg2-box3{
+    height: 28vh;
+    width: 28vw;
+    /* border: 2px solid black; */
+    text-align: center;
+    padding-top: 1vmax;
+}
+.pg2-box1 >h3, .pg2-box2 >h3, .pg2-box3 >h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vmax;
+}
+
+.pg2-box1 >p, .pg2-box2 >p, .pg2-box3 >p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1vmax;
+    margin-top: 0.7vmax;
+    font-weight: bold;
+}
+
+/* -----------------------pg3 end------------------------------------ */
+
+
+
+.pg3{
+    height: 130vh;
+    width: 100%;
+   /* background-color: rgb(255,245,238); */
+    display: flex;
+}
+.pg3-left{
+    height: 130vh;
+    width: 40%;
+    /* background-color: lightblue; */
+  padding-top: 2vmax;
+  padding-left: 2vmax;
+}
+.pg3-left-head{
+    height: 30vh;
+    width: 100%;
+    padding: 1vmax 1vmax;
+    /* border: 2px solid black; */
+}
+.pg3-left-head >h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.2vmax;
+}
+
+.pg3-left-head >p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1vmax;
+    margin-top: 1vmax;
+}
+.pg3-left >h3{
+text-align: center;
+margin-top: 3vmax;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 3vmax;
+}
+
+.pg3-left-imgbox{
+    height: 65vh;
+    width: 82%;
+    /* border: 2px solid black; */
+margin-top: 4vmax;
+margin-left: 3vmax;
+border-radius: 1vmax;
+background: url("https://www.stylecraze.com/wp-content/uploads/2019/11/Dating-Vs--Relationship-Know-Where-You-Are-With-Your-Partner.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+}
+.pg3-right{
+    height: 130vh;
+    width: 60%;
+    /* background-color: beige; */
+}
+
+.pg3-right-profilebox{
+    height: 130vh;
+    width: 100%;
+    /* border: 2px solid black; */
+
+}
+
+.card{
+    height: 58vh;
+    width: 21vw;
+    /* border: 2px solid black; */
+    border-radius: 1vmax;
+    display: inline-block;
+    margin: 0  6vmax;
+    margin-top: 2vmax;
+   padding-top: 1vmax;
+ padding-left: 2vmax;
+ text-decoration: none;
+ box-shadow:  0 0 7px grey;
+ 
+
+}
+.card2, .card4{
+    margin-left: -2vmax;
+}
+.card >img{
+    height: 22vh;
+    width: 70%;
+    border-radius: 1vmax;
+object-fit: cover;
+object-position: top;
+}
+span{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5vmax;
+    color:hotpink;
+  
+}
+
+.card >h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3vmax;
+ margin-top: 0.6vmax;
+ color: black;
+
+}
+.card >button{
+    padding: 0.7vmax 0.5vmax;
+    font-size: 1.4vmax;
+    font-family: Arial, Helvetica, sans-serif;
+border: none;
+    border-radius: 0.5vmax;
+    background-color: black;
+    margin-top: 1.4vmax;
+    margin-left: -1vmax;
+    color: white;
+}
+
+/* ---------------------------pg3 end---------------------------------- */
+
+.pg4{
+    height: 50vh;
+    width: 100%;
+   background-color: rgb(255,245,238);
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   padding: 0 1vmax;
+}
+.pg4-box1, .pg4-box2, .pg4-box3{
+    height: 28vh;
+    width: 28vw;
+    /* border: 2px solid black; */
+    text-align: center;
+    padding-top: 1vmax;
+}
+
+.pg4-box1 >h4, .pg4-box2 >h4, .pg4-box3 >h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.8vmax;
+    margin-top: 0.5vmax;
+}
+
+
+.pg4-box1 >h5, .pg4-box2 >h5, .pg4-box3 >h5{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1vmax;
+    margin-top: 0.3vmax;
+}
+
+.pg4-box1-logo{
+    height: 11vh;
+    width: 7vw;
+    border-radius: 10vmax;
+    /* border: 2px solid black; */
+display: block;
+margin: auto;
+background-image: url("https://millionhearts.hhs.gov/images/MH_Logo_Red_Bkd_Fb.jpg");
+background-position: center;
+background-size: cover;
+
+}
+
+.pg4-box2-logo{
+    height: 11vh;
+    width: 7vw;
+    border-radius: 10vmax;
+    /* border: 2px solid black; */
+display: block;
+margin: auto;
+background-image: url("https://media.istockphoto.com/id/1185418152/vector/casual-business-man-and-woman.jpg?b=1&s=612x612&w=0&k=20&c=l1ZbHR6wa8yo_SRORQyoBviUCpgKI7E6Yud7dtz8RJ4=");
+background-size: cover;
+
+}
+
+.pg4-box3-logo{
+    height: 12vh;
+    width: 7vw;
+    border-radius: 10vmax;
+    /* border: 2px solid black; */
+display: block;
+margin: auto;
+background-image: url("https://cdn3d.iconscout.com/3d/premium/thumb/chat-bubble-5314536-4440391.png?f=webp");
+background-size: cover;
+
+}
+
+
+/* -------------------------pg4 end--------------------------------- */
+
+.pg5{
+    height: 50vh;
+    width: 100%;
+    background-color: pink;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-self: center;
+    padding-top: 2vmax;
+}
+.pg5 >h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.6vmax;
+}
+
+.pg5 >p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 1.3vmax;
+    width: 50vw;
+    text-align: center;
+    margin-top: 1vmax;
+}
+.pg5 >h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4vmax;
+    font-weight: bold;
+    margin-top: 1vmax;
+    text-align: center;
+    color: red;
+}
+
+.pg5 >a{
+    padding: 0.6vmax 1vmax;
+    border: 2px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4vmax;
+    text-decoration: none;
+    color: black;
+    margin-top: 1vmax;
+    font-weight: bold;
+}
+/* ---------------------------------pg5 end------------------------------ */
+

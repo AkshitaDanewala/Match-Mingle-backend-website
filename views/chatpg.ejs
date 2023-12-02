@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/chatpg.css">
+</head>
+<body>
+    
+<div class="msgpg">
+    <h1>Have a Friendly Chat💕</h1>
+    <a href="/people" class="backbtn">⬅</a>
+<div class="chatbox">
+    <div class="messages">
+    <h1><div class="person-name-box"></div></h1>
+
+    </div>
+
+<div class="inputs">
+    <input type="text" name="message" placeholder="Send Message">
+    <button onclick="sendMsg()">Send</button>
+</div>
+
+</div>
+
+<button class="joinroom" onclick="joinRoom()">Join Room</button>
+
+</div>
+
+
+
+
+
+
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        var socket = io();
+
+var roomName = null
+
+
+var username = prompt("Enter User Name")
+console.log(username)
+document.querySelector(".person-name-box").innerHTML += `${username}`
+
+
+
+function incomingMsg(msg){
+document.querySelector(".messages").innerHTML+= ` <div class="incomingMsg msg">
+      <div class="username">${msg.username}</div>
+      <div class="chats">${msg.msg}</div>
+    </div>`
+}
+
+
+function outgoingMsg(msg){
+document.querySelector(".messages").innerHTML+= `<div class="outgoingMsg msg">
+      <div class="username">you</div>
+      <div class="chats">${msg}</div>
+    </div>`
+}
+
+function sendMsg(){
+    const msg = document.querySelector("input").value
+
+    const msgPacket = {
+        username: username,
+        msg: msg,
+        roomName: roomName
+    }
+
+    outgoingMsg(msg)
+    socket.emit("sony", msgPacket)
+document.querySelector("input").value = ""
+    
+}
+
+socket.on("max", msg=>{
+    incomingMsg(msg)
+})
+
+
+function joinRoom(){
+    roomName = prompt("enter Room Name")
+    console.log(roomName)
+    socket.emit("joinroom", roomName)
+}
+
+
+    </script>
+</body>
+</html>

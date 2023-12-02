@@ -1,0 +1,65 @@
+<link rel="stylesheet" href="/stylesheets/people.css">
+<link rel="stylesheet" href="/stylesheets/nav2.css">
+
+<%- include("partials/header")%>
+
+<div class="pg1">
+
+  <nav>
+    <div class="logo">
+        <h1>FINDER</h1>
+        <h6><i class="ri-heart-pulse-fill"></i></h6>
+    </div>
+
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About us</a></li>
+        <li><a href="/services">Services</a></li>
+        <li><a href="/blog">Blogs</a></li>
+
+    </ul>
+
+        <div class="navbtns">
+           
+                <button class="logout"> <a href="/login">Logout</a> </button>
+                <div class="account">
+<a href="/know/<%= profiles._id%>"><img src="<%= profiles.image%>" alt=""></a>
+                  
+                </div>
+        
+          
+        </div>
+
+   
+   
+</nav>
+
+
+
+
+
+<div class="pg1-head">
+    <h1>"Where There is LOVE There is LIFE💕💕"</h1>
+    <p>Love is not something you find. Love is something that finds you..</p>
+</div>
+  
+
+<div class="peopledata">
+   <% read.forEach(function(data){ %>
+    <div class="card">
+        <img src="<%= data.image%>" alt="">
+         <h3> <span>Name:</span> &nbsp; &nbsp;<%= data.name%></h3>
+         <h3> <span>Age:</span> &nbsp; &nbsp;<%= data.age%></h3>
+       <h3><span>Gender:</span> &nbsp; &nbsp; <%= data.gender%></h3>
+       <h3><span>State:</span>&nbsp; &nbsp;  <%= data.state%></h3>
+<button class="know"> <a href="/details/<%= data._id%>">Know More</a> </button>
+
+
+    </div>
+  <% })%>
+
+</div>
+
+<script src="/javascripts/people.js"></script>
+<%- include("partials/footer2")%>
+<%- include("partials/footer")%>

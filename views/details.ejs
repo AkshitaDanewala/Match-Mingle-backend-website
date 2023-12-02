@@ -1,0 +1,112 @@
+<%- include("partials/header")%>
+<%- include("partials/nav2")%>
+<link rel="stylesheet" href="/stylesheets/know.css">
+<link rel="stylesheet" href="/stylesheets/nav2.css">
+
+<div class="knowpg">
+
+    <div class="box1">
+        <div class="box1-left">
+            <a href="/people" class="backbtn">⬅</a>
+         <img class="profilepic" src="<%= data.image%>" alt="">
+<h3><%= data.name%></h3>
+        </div>
+        
+        <div class="box1-right">
+            <h2> <span>Name:</span> &nbsp; &nbsp; <%= data.name%></h2>
+            <h4><span>Age:</span> &nbsp; &nbsp; <%= data.age%></h4>
+            <h4><span>Date of Birth:</span> &nbsp; &nbsp; <%= data.dob%></h4>
+            <h4><span>Religion:</span> &nbsp; &nbsp; <%= data.religion%></h4>
+            <h4><span>State:</span> &nbsp; &nbsp; <%= data.state%></h4>
+            <h4><span>City:</span> &nbsp; &nbsp; <%= data.city%></h4>
+            <h4><span>Education:</span> &nbsp; &nbsp; <%= data.education%></h4>
+            <h4><span>Email:</span> &nbsp; &nbsp; <%= data.email%></h4>
+            <h4><span>Contact:</span> &nbsp; &nbsp; <%= data.number%></h4>
+            <h4><span>About:</span> &nbsp; &nbsp; <%= data.about%></h4>
+
+  
+          <a href="/chatpg">Message</a>
+        </div>
+    
+    </div>
+
+
+    <div class="imgsbox">
+        <div class="imgbox1" ondblclick="like1()">
+            <img src="<%= data.image1%>"  class="pics1 pics" alt="">
+            <i class="ri-heart-fill heart1"></i>
+            <h5><i class="ri-heart-line emptyredheart1"></i></h5>
+            <h6><i class="ri-heart-fill redheart1"></i></h6>
+<div class="number1" ></div>
+        </div>
+
+<div class="imgbox2" ondblclick="like2()">
+    <img src="<%= data.image2%>"  class="pics2 pics" alt="">
+    <i class="ri-heart-fill heart2"></i>
+    <h5><i class="ri-heart-line emptyredheart2"></i></h5>
+    <h6><i class="ri-heart-fill redheart2"></i></h6>
+<div class="number2" ></div>
+
+</div>
+
+
+<div class="imgbox3" ondblclick="like3()">
+    <img src="<%= data.image3%>"  class="pics3 pics" alt="">
+    <i class="ri-heart-fill heart3"></i>
+    <h5><i class="ri-heart-line emptyredheart3"></i></h5>
+    <h6><i class="ri-heart-fill redheart3"></i></h6>
+<div class="number3" ></div>
+
+</div>
+
+
+<div class="imgbox4" ondblclick="like4()">
+    <img src="<%= data.image4%>"  class="pics4 pics" alt="">
+    <i class="ri-heart-fill heart4"></i>
+    <h5><i class="ri-heart-line emptyredheart4"></i></h5>
+    <h6><i class="ri-heart-fill redheart4"></i></h6>
+<div class="number4" ></div>
+
+</div>
+
+<div class="imgbox5" ondblclick="like5()">
+    <img src="<%= data.image5%>"  class="pics5 pics" alt="">
+    <i class="ri-heart-fill heart5"></i>
+    <h5><i class="ri-heart-line emptyredheart5"></i></h5>
+    <h6><i class="ri-heart-fill redheart5"></i></h6>
+<div class="number5" ></div>
+
+</div>
+
+<div class="imgbox6" ondblclick="like6()">
+    <img src="<%= data.image6%>"  class="pics6 pics" alt="">
+    <i class="ri-heart-fill heart6"></i>
+    <h5><i class="ri-heart-line emptyredheart6"></i></h5>
+    <h6><i class="ri-heart-fill redheart6"></i></h6>
+<div class="number6" ></div>
+
+</div>
+
+    </div>
+
+
+
+   
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/javascripts/know.js"></script>
+<%- include("partials/footer2")%>
+
+<%- include("partials/footer")%>

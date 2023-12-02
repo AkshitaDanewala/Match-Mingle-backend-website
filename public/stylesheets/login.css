@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.pg1{
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.pg1 >h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5vmax;
+margin-bottom: 1vmax;
+}
+
+form{
+    height: 65vh;
+    width: 28vw;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5vmax;
+    /* background-color: rgb(255,245,238); */
+    background-color: black;
+}
+input{
+padding: 1vmax 1.5vmax;
+border-radius: 0.5vmax;
+margin: 1vmax  0;
+font-size: 1.4vmax;
+font-family: Arial, Helvetica, sans-serif;
+text-align: center;
+border-bottom: 2px solid black;
+outline: none;
+border-left:none;
+border-right: none;
+border-top: none;
+
+}
+
+.login{
+    padding: 0.6vmax 1.3vmax;
+    border-radius: 0.5vmax;
+    border: none;
+    background-color: yellowgreen;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4vmax;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    margin-top: 1vmax;
+}
+ 
+
+p{
+    margin-top: 1vmax;
+    font-size: 1.6vmax;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.register a{
+    margin-top: 1vmax;
+    font-size: 1.5vmax;
+  
+   font-family: Arial, Helvetica, sans-serif;
+}

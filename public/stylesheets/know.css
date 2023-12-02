@@ -1,0 +1,226 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+.knowpg{
+    height: 190vh;
+    width: 100%;
+    background-color: rgb(255,245,238);
+  
+}
+.box1{
+    height: 80vh;
+    width: 100%;
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1vmax;
+}
+
+.box1-left{
+height: 90%;
+width: 30vw;
+/* border: 2px solid black; */
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+position: relative;
+}
+.box1-left >h3{
+    margin-top: 1vmax;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.profilepic{
+    height: 41vh;
+    width: 20vw;
+/* border: 2px solid black; */
+border-radius: 10vmax;
+object-fit: cover;
+object-position: top;
+
+}
+.box1-right{
+    height: 90%;
+    width: 68vw;
+    /* border: 2px solid black; */
+    padding: 2vmax 2vmax;
+   
+    }
+
+    .box1-right >h2{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.5vmax;
+        margin: 0.4vmax 0 ;
+    }
+    .box1-right >h4{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.4vmax;
+        margin: 0.4vmax 0 ;
+       
+    }
+    
+    span{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.5vmax;
+        color: grey;
+    }
+   
+    a >img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 5vmax;
+
+    }
+
+    .imgsbox{
+        height: 102vh;
+        width: 100%;
+        /* border: 2px solid black; */
+     margin-top: 2vmax;
+    }
+    .imgbox1,  .imgbox2, .imgbox3, .imgbox4, .imgbox5, .imgbox6{
+        height: 48vh;
+        width: 21vw;
+        /* background-color: red; */
+        /* border: 2px solid black; */
+
+display: inline-block;
+margin-top: 1vmax;
+margin-left: 2vmax;
+object-fit: cover;
+border-radius: 1vmax;
+position: relative;
+
+    }
+    .pics{
+        height: 40vh;
+        /* background-color: yellow; */
+        /* width: 20vw; */
+        width: 100%;
+        border: 1px solid black;
+display: inline-block;
+object-fit: cover;
+object-position: top;
+border-radius: 1vmax;
+    }
+    .heart1, .heart2, .heart3, .heart4, .heart5, .heart6{
+        font-size: 3.5vmax;
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        /* opacity: 0.8; */
+        transition: transform ease 0.5s;
+    }
+    .redheart1, .redheart2, .redheart3, .redheart4, .redheart5, .redheart6{
+        font-size: 2.3vmax;
+position: absolute;
+top: 85%;
+left:3%;
+/* color: white; */
+display: none;
+
+    }
+
+    .emptyredheart1,  .emptyredheart2,  .emptyredheart3,  .emptyredheart4,  .emptyredheart5,  .emptyredheart6{
+        font-size: 2.3vmax;
+        position: absolute;
+        top: 85%;
+        left:3%;
+    }
+
+    .number1, .number2, .number3, .number4, .number5, .number6{
+        height: 5vh;
+        width: 2.7vw;
+        /* border: 2px solid black; */
+        position: absolute;
+        top: 86%;
+        left: 15%;
+        font-size: 1.7vmax;
+        text-align: center;
+    }
+    h3{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.6vmax;
+    }
+    .delete{
+        padding: 0.7vmax 1.3vmax;
+        border-radius: 0.5vmax;
+        font-size: 1.4vmax;
+        font-family: Arial, Helvetica, sans-serif;
+        border: none;
+        background-color: yellowgreen;
+        margin-top: 1vmax;
+    }
+    .delete a{
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+
+
+    .update{
+        padding: 0.7vmax 1.3vmax;
+        border-radius: 0.5vmax;
+        font-size: 1.4vmax;
+        font-family: Arial, Helvetica, sans-serif;
+        border: none;
+        background-color: yellowgreen;
+        margin-top: 1vmax;
+        margin-left: 1vmax;
+
+    }
+    .update a{
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+    .people{
+        padding: 1vmax 1vmax;
+        border: none;
+        border-radius: 0.5vmax;
+        font-size: 1.4vmax;
+        font-family: Arial, Helvetica, sans-serif;
+background: none;
+margin-top: 1vmax;
+    }
+    .people a{
+        text-decoration: none;
+       
+        font-weight: bold;
+    }
+
+    .backbtn{
+        font-size: 3vmax;
+        position: absolute;
+        top: -4%;
+        left: 4%;
+        text-decoration: none;
+        color: black;
+    }
+
+    .msgbtn {
+padding: 0.7vmax 1vmax;
+border-radius: 0.5vmax;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 1.3vmax;
+border: none;
+background-color: yellowgreen;
+margin-top: 1vmax;
+    }
+
+    .msgbtn> a{
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }

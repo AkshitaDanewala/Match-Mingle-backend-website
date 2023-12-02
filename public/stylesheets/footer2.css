@@ -1,0 +1,31 @@
+.pg6{
+    height: 54vh;
+    width: 100%;
+   /* background-color: rgb(255,245,238); */
+    display: flex;
+    justify-content: space-between;
+    padding: 2vmax 5vmax;
+}
+
+.pg6 >.box{
+height: 38vh;
+width: 15vw;
+/* border: 2px solid black; */
+}
+.pg6 >.pg6-box3, .pg6 >.pg6-box4{
+    height: 49vh;
+}
+.box >a h5{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2vmax;
+    margin: 1vmax 0 ;
+}
+.box >a{
+    text-decoration: none;
+    color: black;
+}
+
+.box >a:hover{
+    text-decoration:underline;
+
+}

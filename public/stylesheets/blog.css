@@ -1,0 +1,115 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.blogpgintro{
+    height: 35vh;
+    width: 100%;
+    background-color: rgb(255,245,238);
+text-align: center;
+padding-top: 3vmax;
+}
+
+.blogpgintro >h1{
+font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.blogpgintro >p{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 1vmax;
+    font-size: 1.5vmax;
+    color: red;
+}
+/* --------------------------------------------------------------------------- */
+
+
+
+.advicesbox{
+height: 190vh;
+width: 100%;
+background-color: pink;
+padding: 0 1vmax;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+flex-direction: column;
+
+}
+
+.advicenavbar{
+    height: 13vh;
+    width: 90%;
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.advicenavbar >a{
+    padding: 1vmax 1.5vmax;
+    background-color: white;
+    border-radius: 5vmax;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3vmax;
+    text-decoration: none;
+    color: black;
+    margin: 0 1vmax;
+    font-weight: bold;
+}
+
+.advicenavbar >a:hover{
+    text-decoration: underline;
+}
+.tipsbox{
+    height:158vh;
+    width: 100%;
+    /* border: 2px solid black; */
+    padding: 0 3vmax;
+}
+.tips{
+    height: 72vh;
+    width: 27vw;
+    border: 1px solid black;
+    display: inline-block;
+margin-left: 2vmax;
+margin-top: 2.5vmax;
+border-radius: 1vmax;
+/* padding: 0 0.4vmax; */
+background-color: white;
+}
+
+
+.tips >img{
+    height: 33vh;
+    width: 100%;
+border-radius: 1vmax;
+
+}
+
+.tips >h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6vmax;
+    margin-top: 0.5vmax;
+padding-left: 0.8vmax;
+/* padding-bottom: 0.4vmax; */
+
+}
+
+.tips >p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2vmax;
+    margin-top: 1vmax;
+padding: 0 0.4vmax;
+
+}
+

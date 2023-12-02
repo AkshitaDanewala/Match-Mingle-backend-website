@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+nav{
+    height: 10vh;
+    width: 100%;
+    background-color: pink;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2vmax;
+}
+.logo{
+    height: 8vh;
+    width: 12vw;
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.logo >h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.1vmax;
+}
+.logo >h6{
+    color: red;
+    font-size: 2.6vmax;
+}
+
+ul{
+height: 6vh;
+width: 30vw;
+box-shadow: 3px 3px 2px black;
+border-radius:5vmax ;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: white;
+margin-left: 2vmax;
+}
+ul li{
+    margin: 0 1vmax;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4vmax;
+    list-style: none;
+}
+
+ul a{
+    color: black;
+    text-decoration: none;
+}
+
+ul a:hover{
+  color: hotpink;
+    cursor: pointer;
+}
+
+.navbtns{
+    height: 9vh;
+    width: 15vw;
+    /* background-color: red; */
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+.logout{
+    padding: 0.6vmax 1.3vmax;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4vmax;
+    border-radius: 0.5vmax;
+    border: none;
+    margin-left: 1vmax;
+}
+.logout >a{
+    text-decoration: none;
+    color: black;
+}
+
+.logout:hover{
+    background-color: hotpink;
+   
+}
+.logout a:hover{
+font-weight: bold;
+}
+.account{
+    height: 8vh;
+    width: 4vw;
+    border-radius: 5vmax;
+    /* border: 2px solid black; */
+margin-left: 2vmax;
+    
+}
+a >img{
+    height: 100%;
+    width: 100%;
+    border-radius: 5vmax;
+    object-fit: cover;
+    object-position: top;
+}

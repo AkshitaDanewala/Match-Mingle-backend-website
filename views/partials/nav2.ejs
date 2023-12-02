@@ -1,0 +1,29 @@
+<nav>
+    <div class="logo">
+        <h1>FINDER</h1>
+        <h6><i class="ri-heart-pulse-fill"></i></h6>
+    </div>
+
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About us</a></li>
+        <li><a href="/services">Services</a></li>
+        <li><a href="/blog">Blogs</a></li>
+
+    </ul>
+
+
+    <div class="navbtns">
+        <% var flag = 0%>
+       <% if(flag == 0){%>
+            <button class="logout"> <a href="/login">Logout</a> </button>
+            <div class="account">
+                <a href="/know/<%= profiles._id%>"><img src="<%= profiles.image%>" alt=""></a>
+            </div>
+            <% flag=1%>
+        <%}else{%>
+            <button class="logout"> <a href="/login">Login</a> </button>
+            <% flag=0%>
+        <%}%>
+          
+</nav>

@@ -1,0 +1,100 @@
+<link rel="stylesheet" href="/stylesheets/register.css">
+
+<div class="pg1">
+
+<div class="pg1-left">
+    <h1>Register yourself with us!!</h1>
+    <div class="imgbox">
+       
+    </div>
+</div>
+<div class="pg1-right">
+
+    
+   
+    <form action="/register" method="post">
+        <input type="text" name="name" placeholder="Name">
+        <input type="text" name="age" placeholder="Age">  
+        <input type="text" name="gender" placeholder="Gender">  
+        <input type="text" name="dob" placeholder="Date of Birth">  
+        <input type="text" name="image" placeholder="Image">
+    <input type="text" name="education" placeholder="Education">
+
+        <select name="religion" >
+            <option value="">Select Religion</option>
+            <option value="Hindu">Hindu</option>
+            <option value="Muslim">Muslim</option>
+            <option value="Sikh">Sikh</option>
+            <option value="Christian">Christian</option>
+            <option value="Jain">Jain</option>
+            <option value="Buddhism">Buddhism</option>
+
+        </select>
+        <select name="state" >
+            <option value="">Select State</option>
+            <% stateNames.forEach(function(s){ %>
+<option value="<%= s%>"><%= s%></option>
+           <% })%>
+          
+        </select>
+
+        <select name="city" >
+            <option value="">Select City</option>
+            <% citynames.forEach(function(c){%>
+<option value="<%= c %>"><%= c%></option>
+            <%})%>
+            <!-- <option value="Bhopal">Bhopal</option>
+            <option value="Pune">Pune</option>
+            <option value="Surat">Surat</option>
+            <option value="Bangalore">Bangalore</option>
+            <option value="Ahemdabad">Ahemdabad</option>
+            <option value="Indore">Indore</option>
+            <option value="Chennai">Chennai</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Badrodra">Badrodra</option>
+            <option value="Aurangabaad">Aurangabaad</option>
+            <option value="Hoshangabaad">Hoshangabaad</option>
+            <option value="Lucknow">Lucknow</option>
+            <option value="Kanpur">Kanpur</option>
+            <option value="Patna">Patna</option>
+            <option value="srinagar">Srinagar</option>
+            <option value="Jaipur">Jaipur</option> -->
+
+        </select>
+    <input type="email" name="email" placeholder="Email">
+    <input type="password" name="password" placeholder="password" >
+    <input type="text" name="number" placeholder="Contact">
+<textarea name="about" id="" cols="33" rows="3" placeholder="About"></textarea>
+
+<div class="profileimgs">
+    <h3>Add Photos</h3>
+    <input type="text" name="image1" placeholder="Image">
+    <input type="text" name="image2" placeholder="Image">
+    <input type="text" name="image3" placeholder="Image">
+    <input type="text" name="image4" placeholder="Image">
+    <input type="text" name="image5" placeholder="Image">
+    <input type="text" name="image6" placeholder="Image">
+</div>
+
+    <button class="submitbtn"> Register</button>
+
+
+
+
+    </form>
+
+
+
+    <button class="backbtn"><a href="/">Back</a></button>
+</div>
+
+
+
+
+
+
+   
+</div>
+
+
+

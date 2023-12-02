@@ -1,0 +1,46 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box{
+    height: 30vh;
+    width: 30vw;
+    background-color: white;
+    box-shadow: 0 0 10px grey;
+    border-radius: 1vmax;
+    padding-top: 2vmax;
+}
+.box >h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vmax;
+    text-align: center;
+}
+
+.box >button{
+    padding: 0.6vmax 1.3vmax;
+    border-radius: 0.5vmax;
+    border: none;
+    background-color: yellowgreen;
+   
+    margin-top: 2vmax;
+    margin-left: 12vmax;
+}
+
+a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4vmax;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
