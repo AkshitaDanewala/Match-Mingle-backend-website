@@ -70,7 +70,8 @@ object-position: top;
     span{
         font-family: Arial, Helvetica, sans-serif;
         font-size: 1.5vmax;
-        color: grey;
+        /* color: grey; */
+        color: hotpink;
     }
    
     a >img{
