@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 const USER = require("../model/usermodel.js")
-var profiles
+var profiles = []
 
 const stateNames= [ "Andhra Pradesh",
                 "Arunachal Pradesh",
@@ -747,7 +747,7 @@ const stateNames= [ "Andhra Pradesh",
 /* GET home page. */
 
 router.get('/', function(req, res, next) {
-  res.render('index');
+  res.render('index' ,{profiles});
 });
 
 
@@ -815,10 +815,10 @@ router.get('/people',  async function(req, res, next) {
 });
 
 
-router.get('/details/:index', async  function(req, res, next) {
+router.get('/details/:id', async function(req, res, next) {
   try{
-    const data = await USER.findById(req.params.index)
-  res.render('details', {data:data, index: req.params.index, profiles}); 
+    const data = await USER.findById(req.params.id)
+  res.render('details', {data:data, index:req.params.id, profiles}); 
   }catch(err){
     res.send(err)
   }
@@ -829,7 +829,7 @@ router.get('/details/:index', async  function(req, res, next) {
 router.get('/know/:id', async function(req, res, next) {
   try{
     const know = await USER.findById(req.params.id)
-    res.render('know', {know: know, data: req.params.id, profiles});
+    res.render('know', {know: know, data:req.params.id, profiles});
   }
   catch(err){
     res.send(err)
@@ -852,7 +852,7 @@ try{
 router.get('/update/:index',  async function(req, res, next) {
 try{
   const update =  await USER.findById(req.params.index)
-  res.render('update', {update: update, index: req.params.index, stateNames,citynames})
+  res.render('update', {update: update, index: req.params.index, stateNames,citynames, profiles})
 }catch(err){
   res.send(err)
 }
@@ -863,9 +863,15 @@ router.post('/update/:index',async function(req, res, next) {
 try{
   const update = await USER.findByIdAndUpdate(req.params.index, req.body)
   res.redirect("/people")
+  // res.render("updatesuccessfully")
+
 }catch(err){
   res.send(err)
 }
+});
+
+router.get('/updatesuccessfully', function(req, res, next) {
+  res.render('updatesuccessfully', {profiles});
 });
 
 
@@ -875,15 +881,15 @@ router.get('/chatpg', function(req, res, next) {
 
 
 router.get('/about', function(req, res, next) {
-  res.render('about');
+  res.render('about', {profiles});
 });
 
 router.get('/services', function(req, res, next) {
-  res.render('services');
+  res.render('services', {profiles});
 });
 
 router.get('/blog', function(req, res, next) {
-  res.render('blog');
+  res.render('blog',{profiles});
 });
 
 

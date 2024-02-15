@@ -1,9 +1,9 @@
 
 <%- include("partials/header")%>
-<%- include("partials/nav")%>
+<%- include("partials/nav2")%>
 
 <link rel="stylesheet" href="/stylesheets/home.css">
-<link rel="stylesheet" href="/stylesheets/nav.css">
+<link rel="stylesheet" href="/stylesheets/nav2.css">
 
 
 <div class="pg1">
@@ -26,7 +26,13 @@
   <div class="pg1box-left">
     <h1>FIND YOUR <BR> PERFECT MATCH HERE...</BR></h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum suscipit laborum voluptatem consequuntur ducimus autem natus possimus, fuga nisi quisquam dolore dolorum vitae id voluptatum maxime! </p>
-  <button><a href="/msgpage">Find Your Match</a></button>
+
+    <% if(!profiles){%>
+      <button><a href="/msgpage">Find Your Match</a></button>
+      <%}else{%>
+        <button><a href="/people">Find Your Match</a></button>
+
+      <%}%>
 
   <div class="category">
     <div class="box" id="box1"> 

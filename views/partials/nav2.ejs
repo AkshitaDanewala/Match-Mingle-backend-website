@@ -13,7 +13,7 @@
     </ul>
 
 
-    <div class="navbtns">
+    <!-- <div class="navbtns">
         <% var flag = 0%>
        <% if(flag == 0){%>
             <button class="logout"> <a href="/login">Logout</a> </button>
@@ -24,6 +24,20 @@
         <%}else{%>
             <button class="logout"> <a href="/login">Login</a> </button>
             <% flag=0%>
-        <%}%>
-          
+        <%}%> -->
+
+
+        
+
+     <div class="navbtns">
+
+           <% if(!profiles){%>
+         <button class="logout"> <a href="/login">Login</a> </button>
+           <%}else{%>
+            <button class="logout"> <a href="/login">Logout</a> </button>
+            <div class="account">
+                <a href="/know/<%= profiles._id%>"><img src="<%= profiles.image%>" alt=""></a>
+            </div>
+           <%}%>
+           </div>
 </nav>
