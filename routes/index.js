@@ -875,9 +875,7 @@ router.get('/updatesuccessfully', function(req, res, next) {
 });
 
 
-router.get('/chatpg', function(req, res, next) {
-  res.render('chatpg');
-});
+
 
 
 router.get('/about', function(req, res, next) {
@@ -894,7 +892,7 @@ router.get('/blog', function(req, res, next) {
 
 
 router.get('/datingtips', function(req, res, next) {
-  res.render('datingtips');
+  res.render('datingtips', {profiles});
 });
 
 router.get('/relationshipspg', function(req, res, next) {

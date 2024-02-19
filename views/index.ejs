@@ -1,12 +1,66 @@
 
 <%- include("partials/header")%>
-<%- include("partials/nav2")%>
 
 <link rel="stylesheet" href="/stylesheets/home.css">
-<link rel="stylesheet" href="/stylesheets/nav2.css">
+
+<nav>
+  <div class="logo">
+      <h1>FINDER</h1>
+      <h6><i class="ri-heart-pulse-fill"></i></h6>
+  </div>
+
+  <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/about">About us</a></li>
+      <li><a href="/services">Services</a></li>
+      <li><a href="/blog">Blogs</a></li>
+
+  </ul>
+
+      <!-- <div class="navbtns">
+
+        <% var flag =0%>
+        <% if(flag == 0){%>
+          <button class="logout"> <a href="/login">Logout</a> </button>
+          <div class="account">
+            <a href="/know/<%= profiles._id%>"><img src="<%= profiles.image%>" alt="" class="profileimg"></a>
+                            
+                          </div>            
+<% flag = 1%>
+        <%}else{%>
+          <button class="logout"> <a href="/login">LogIn</a> </button>
+<% flag = 0%>
+        <%}%>
+            
+      </div> -->
+
+ 
+       <div class="navbtns">
+
+        <% if(!profiles){%>
+
+          <button class="logout"> <a href="/login">Logout</a> </button>
+          <div class="account">
+            <a href="/know/<%= profiles._id%>"><img src="<%= profiles.image%>" alt="" class="profileimg"></a>
+                            
+          </div>   
+                 
+        <%}else{%>
+
+          <button class="logout"> <a href="/login">LogIn</a> </button>
+          
+
+        <%}%>
+            
+      </div>
+
+ 
+</nav>
+
 
 
 <div class="pg1">
+
 
   <div class="pg1-head">
 
@@ -29,8 +83,10 @@
 
     <% if(!profiles){%>
       <button><a href="/msgpage">Find Your Match</a></button>
+      
       <%}else{%>
         <button><a href="/people">Find Your Match</a></button>
+
 
       <%}%>
 
@@ -110,7 +166,7 @@
 
   <div class="pg3-right">
     <div class="pg3-right-profilebox">
-      <a href="/login" class="card1 card">
+        <a href="/login" class="card1 card">
         <img src="https://media.istockphoto.com/id/918695532/photo/woman-using-tablet-on-the-street.jpg?s=612x612&w=0&k=20&c=GQR-m9KSY-rbe7tgqS2VuHJNtTBL0F-uEDlelGY3HOs=" alt="" class="img1">
         <h3> <span>Name:</span> &nbsp; &nbsp; Ankita Yadav</h3>
         <h3> <span>Age:</span> &nbsp; &nbsp; 23</h3>
